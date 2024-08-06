@@ -1,0 +1,22 @@
+{
+	"name": "AdonisJS with Postgres and Redis",
+	"dockerComposeFile": "./compose.yaml",
+	"service": "hello-world",
+	"workspaceFolder": "/workspace",
+	"shutdownAction": "stopCompose",
+	"features": {
+		"ghcr.io/prulloac/devcontainer-features/gitlint:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"jripouteau.adonis-vscode-extension",
+				"AdonisJS.vscode-edge",
+				"jripouteau.japa-vscode",
+				"esbenp.prettier-vscode",
+				"dbaeumer.vscode-eslint",
+				"rvest.vs-code-prettier-eslint"
+			]
+		}
+	}
+}
