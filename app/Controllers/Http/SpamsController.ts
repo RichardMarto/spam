@@ -6,7 +6,7 @@ export default class SpamsController {
     const body = request.body()
     const createSpam = {
         'content': body.content,
-        'phoneNumber': body.phoneNumber
+        'phoneNumber': body.phone_number
     }
     const tobeCreated: Spam = Spam.fromCreateSpam(createSpam)
     const spam: Spam = await Spam.create(tobeCreated)
